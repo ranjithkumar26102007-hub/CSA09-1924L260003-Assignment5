@@ -1,0 +1,13 @@
+records,approach,time_ms,rows_per_sec,relative
+1000,batch_one_tx,1410,709.2,baseline
+1000,batch_auto_commit,4931,202.8,3.5x
+1000,prepared_per_row,4116,243.0,2.9x
+1000,statement_per_row,4262,234.6,3.0x
+10000,batch_one_tx,4852,2061.0,baseline
+10000,batch_auto_commit,42462,235.5,8.8x
+10000,prepared_per_row,41988,238.2,8.7x
+10000,statement_per_row,40472,247.1,8.3x
+100000,batch_one_tx,34519,2897.0,baseline
+100000,batch_auto_commit,425291,235.1,12.3x
+100000,prepared_per_row,400840,249.5,11.6x
+100000,statement_per_row,-1,0.0,not_run
